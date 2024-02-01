@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With React</title>
+</head>
+
+<body>
+    <main>
+        <div id="counter">
+            5
+        </div>
+        <button id="btn">
+            Click me
+        </button>
+    </main>
+    <script>
+        document.querySelector("#btn").addEventListener("click", () => {
+            let num = parseInt(document.querySelector("#counter").innerHTML);
+            document.querySelector("#counter").innerHTML = num + 1;
+        })
+    </script>
+</body>
+
+</html>
